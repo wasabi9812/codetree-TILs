@@ -19,7 +19,7 @@ def multi(x, y):
     return r
 
 def div(x, y):
-    r = x / y
+    r = x // y
     return r
 
 # 연산 수행
