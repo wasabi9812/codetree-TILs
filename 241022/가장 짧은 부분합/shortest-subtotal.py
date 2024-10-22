@@ -17,4 +17,7 @@ for i in range(1, n+1):
 
     sum_val -= arr[i]
 
-print(minimal_length)
+if minimal_length == float('inf'):
+    print(-1)
+else:
+    print(minimal_length)
