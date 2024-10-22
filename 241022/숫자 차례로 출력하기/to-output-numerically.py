@@ -15,6 +15,6 @@ def recur2(n):
     print(n, end=' ')
 
 
-recur1(N)
-print()
 recur2(N)
+print()
+recur1(N)
