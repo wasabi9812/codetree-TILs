@@ -13,7 +13,7 @@ for i in range(1, n+1):
         j += 1
 
         if sum_val >= s:
-            minimal_length = min(minimal_length, abs(j-i+1))
+            minimal_length = min(minimal_length, j-i+1)
 
     sum_val -= arr[i]
 
