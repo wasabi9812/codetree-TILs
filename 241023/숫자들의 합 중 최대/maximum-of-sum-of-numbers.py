@@ -16,3 +16,5 @@ if valsum1>valsum2:
     print (valsum1)
 elif valsum1<valsum2:
     print (valsum2)
+else:
+    print (valsum1)
