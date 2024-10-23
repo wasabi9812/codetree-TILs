@@ -1,20 +1,17 @@
 import sys
 
-N, M = map(int,sys.stdin.readline().split())
+N, M = tuple(map(int,sys.stdin.readline().split()))
 
-d1= list(str(N))
-d2= list(str(M))
-valsum1 =0
-valsum2 =0
-for i in range(len(d1)):
-    valsum1 += int(d1[i])
+def digit_sum(n):
+    if n<10:
+        return n
+    else:
+        return digit_sum(n//10)+(n%10)
 
-for i in range(len(d2)):
-    valsum2 += int(d2[i])
 
-if valsum1>valsum2:
-    print (valsum1)
-elif valsum1<valsum2:
-    print (valsum2)
-else:
-    print (valsum1)
+ans = 0
+
+for i in range(N, M+1):
+    ans = max(ans, digit_sum(i))
+
+print(ans)
