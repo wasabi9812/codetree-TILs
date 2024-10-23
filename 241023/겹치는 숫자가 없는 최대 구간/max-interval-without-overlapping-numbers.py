@@ -7,7 +7,7 @@ ans = 0
 count_arr = [0,0,0,0]
 j=0
 for i in range(1,N+1):
-    while j+1 <=N and count_arr[arr[j+1]] !=1:
+    while j+1 <=N+1 and count_arr[arr[j+1]] !=1:
         count_arr[arr[j+1]]+=1
         j+=1
     
