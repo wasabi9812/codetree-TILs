@@ -6,7 +6,7 @@ last = 0
 for i in range(1,N+1):
     m = int(sys.stdin.readline())
     if last<m:
-        for j in range(1,m+1):
+        for j in range(last + 1,m+1):
             stack.append(j)
             print("+")
         last = m
