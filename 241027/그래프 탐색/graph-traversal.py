@@ -26,4 +26,4 @@ def dfs(start, graph):
                     stack.append(neighbor)
 
 dfs(1,graph)
-print(cnt)
+print(cnt-1)
