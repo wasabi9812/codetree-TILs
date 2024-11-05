@@ -11,8 +11,11 @@ def sortnum(arr):
                 arr[j-1], arr[j] = arr[j], arr[j-1]
 
 sortnum(data)
-sum_val = 0
-for i in range(N):
-    sum_val+=data[N-i]
+if N ==1:
+    print(data[1])
+else:
+    sum_val = 0
+    for i in range(N):
+        sum_val+=data[N-i]
 
-print(sum_val)
+    print(sum_val)
