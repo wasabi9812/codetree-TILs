@@ -9,6 +9,6 @@ int main() {
     
     a=b;
     b =temp;
-    cout <<a<" "<<b;
+    cout <<a" "<<b;
     return 0;
 }
