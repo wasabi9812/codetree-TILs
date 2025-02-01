@@ -6,6 +6,7 @@ int main() {
     string a,b,c;
     char d;
     cin >>a>>d>>b>>d>>c;
+    cin.ignore();
     cout <<a<<"-"<<c<<"-"<<b;
     return 0;
 }
