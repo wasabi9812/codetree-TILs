@@ -7,6 +7,6 @@ int main() {
     char d;
     string e ="-";
     cin>>a>>d>>b>>d>>c;
-    cout <<c<<e<<b<<e<<a;
+    cout <<b<<e<<c<<e<<a;
     return 0;
 }
