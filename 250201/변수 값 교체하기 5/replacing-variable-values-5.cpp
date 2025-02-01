@@ -5,7 +5,7 @@ int main() {
     // Please write your code here.
     int a = 2;
     int b = 6;
-    b =a;
+    a =b;
     cout<<a<<endl;
     cout<<b;
     return 0;
