@@ -6,7 +6,7 @@ int main() {
     double a,b;
     cin >>a>>b;
     cout<<fixed;
-    cout.precesion(2);
+    cout.precision(2);
     cout<<a+b;
     return 0;
 }
