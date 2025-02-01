@@ -6,7 +6,7 @@ int main() {
     string c;
     double a,b;
     cin >>c>>a>>b;
-    cout<<c;
+    cout<<c<<endl;
     cout<<fixed;
     cout.precision(2);
     cout <<a<<endl<<b;
