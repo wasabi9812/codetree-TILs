@@ -1,0 +1,13 @@
+n, k = map(int, input().split())
+commands = [tuple(map(int, input().split())) for _ in range(k)]
+
+# Please write your code here.
+nlist = [0]*n
+for i in range(k):
+    a = commands[i][0]
+    b = commands[i][1]
+
+    for j in range(a-1,b):
+        nlist[j] +=1
+
+print(max(nlist))
