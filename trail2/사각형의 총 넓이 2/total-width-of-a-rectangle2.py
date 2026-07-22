@@ -17,10 +17,10 @@ nlist= [[0]*201 for _ in range(201)]
 
 
 for i in range(n):
-    xa =x1[i]
-    xb =x2[i]
-    ya =y1[i]
-    yb =y2[i]
+    xa =x1[i] + offset
+    xb =x2[i] + offset
+    ya =y1[i] + offset
+    yb =y2[i] + offset
     for j in range(xa,xb):
         for k in range(ya,yb):
             nlist[j][k] +=1
