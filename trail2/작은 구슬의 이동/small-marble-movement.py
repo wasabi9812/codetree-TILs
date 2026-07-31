@@ -1,25 +1,21 @@
 N, T = map(int, input().split())
 
-R, C, direction = input().split()
-R = int(R)
-C = int(C)
+x, y, direction = input().split()
+x = int(x) - 1
+y = int(y) - 1
 
-# 네 기준: x는 좌우, y는 위아래인 수학 좌표계
-x = C - 1
-y = N - R
+# x = 행, y = 열
 
-dx = [1, -1, 0, 0]
-dy = [0, 0, 1, -1]
+dx = [0, 1, -1, 0]
+dy = [1, 0, 0, -1]
 
-idx = 0
-
-if direction == 'L':
-    idx = 1
-elif direction == 'R':
+if direction == 'R':
     idx = 0
+elif direction == 'D':
+    idx = 1
 elif direction == 'U':
     idx = 2
-elif direction == 'D':
+elif direction == 'L':
     idx = 3
 
 while T:
@@ -33,16 +29,12 @@ while T:
         y = ny
     else:
         if idx == 0:
-            idx = 1
-        elif idx == 1:
-            idx = 0
-        elif idx == 2:
             idx = 3
         elif idx == 3:
+            idx = 0
+        elif idx == 1:
             idx = 2
+        elif idx == 2:
+            idx = 1
 
-# 수학 좌표계를 다시 행, 열로 변환
-R = N - y
-C = x + 1
-
-print(R, C)
+print(x + 1, y + 1)
